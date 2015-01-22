@@ -99,6 +99,14 @@
     <Import Include="System.Windows.Navigation" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Model\Enums\UnitType.vb" />
+    <Compile Include="Model\Enums\WeaponType.vb" />
+    <Compile Include="Model\Gun.vb" />
+    <Compile Include="Model\Interfaces\IWeapon.vb" />
+    <Compile Include="Model\Laser.vb" />
+    <Compile Include="Model\Sword.vb" />
+    <Compile Include="Model\Unit.vb" />
+    <Compile Include="Model\WeaponInventory.vb" />
     <Compile Include="My Project\AssemblyInfo.vb">
       <SubType>Code</SubType>
     </Compile>
@@ -129,6 +137,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Control\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

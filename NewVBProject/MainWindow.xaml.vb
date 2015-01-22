@@ -5,6 +5,8 @@
     End Sub
 
     Private Sub btnAddSword_Click(sender As Object, e As RoutedEventArgs) Handles btnAddSword.Click
-        txtBoxResults.Text = "Adding sword..."
+        Dim armsList As New WeaponInventory()
+        armsList.addWeapon(WeaponType.Sword, "Cutlas")
+        txtBoxResults.Text = armsList.ToString
     End Sub
 End Class
